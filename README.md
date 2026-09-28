@@ -8,6 +8,11 @@ This repository is the source of truth for R&D skills.
 
 It is intentionally separate from the `team-skill-hub` server repository.
 
+## Developer guide
+
+- [Skill development and submission guide](docs/skill-development-guide.md)
+- [Skill 开发与提交流程](docs/skill-development-guide.zh-CN.md)
+
 Typical workflow:
 
 ```text
