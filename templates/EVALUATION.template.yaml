@@ -1,0 +1,32 @@
+schema_version: 1
+id: example-regression
+description: Deterministic regression suite for one domain.
+cases:
+  - id: resolve-domain-skill
+    description: A representative task should resolve to the expected Skill.
+    target: skill
+    operation: resolve
+    query: example task
+    client: codex
+    expect:
+      selected: example-skill
+
+  - id: prompt-contract
+    target: prompt
+    operation: get
+    name: example-prompt
+    expect:
+      contains:
+        - required instruction
+
+  - id: agent-bindings
+    target: agent
+    operation: get
+    name: example-agent
+    expect:
+      skills:
+        - example-skill
+      prompts:
+        - example-prompt
+      tools:
+        - git

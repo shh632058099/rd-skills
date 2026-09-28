@@ -1,0 +1,29 @@
+schema_version: 1
+name: ota-expert
+version: 1.0.0
+description: Internal OTA engineering agent profile for code review, deployment analysis, and OTA implementation guidance.
+metadata:
+  audience:
+    - developer
+  visibility:
+    - internal
+  keywords:
+    - ota
+    - code review
+    - deployment
+    - debugging
+    - api
+    - 升级
+    - 代码审查
+  owner: ota-team
+  compatibility:
+    codex: true
+    claude_code: true
+    customer_agent: false
+skills:
+  - ota-code-review
+prompts:
+  - ota-code-review-prompt
+tools:
+  - git
+  - repository-read

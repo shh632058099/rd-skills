@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "R&D Skill Metadata",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "name",
+    "description",
+    "metadata"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "audience",
+        "domain",
+        "category",
+        "keywords",
+        "visibility",
+        "maturity",
+        "owner",
+        "priority"
+      ],
+      "properties": {
+        "audience": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "domain": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "category": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "keywords": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 1
+        },
+        "visibility": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["internal", "customer", "public", "restricted"]
+          },
+          "minItems": 1
+        },
+        "maturity": {
+          "type": "string",
+          "enum": ["experimental", "beta", "stable", "deprecated"]
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        }
+,
+        "depends_on": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "compatibility": {
+          "type": "object",
+          "additionalProperties": {"type": "boolean"}
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
+

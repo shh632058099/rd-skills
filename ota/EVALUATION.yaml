@@ -1,0 +1,54 @@
+schema_version: 1
+id: ota-core-regression
+description: Deterministic regression suite for the internal OTA Skill, Prompt, and Agent assets.
+cases:
+  - id: resolve-ota-code-review
+    description: OTA simplification review should resolve to the dedicated OTA review Skill.
+    target: skill
+    operation: resolve
+    query: review OTA implementation for unnecessary APIs and long call chains
+    client: codex
+    expect:
+      selected: ota-code-review
+
+  - id: search-ota-review-prompt
+    description: OTA API review wording should find the reusable review Prompt.
+    target: prompt
+    operation: search
+    query: OTA API review call chain simplification
+    client: codex
+    expect:
+      selected: ota-code-review-prompt
+
+  - id: prompt-requires-risk
+    description: The review Prompt must continue to require explicit deletion/change risk.
+    target: prompt
+    operation: get
+    name: ota-code-review-prompt
+    expect:
+      contains:
+        - estimate deletion/change risk as Low, Medium, or High
+        - Prefer the smallest safe change
+
+  - id: resolve-ota-expert
+    description: OTA debugging/review work should resolve to ota-expert.
+    target: agent
+    operation: resolve
+    query: OTA code review deployment debugging
+    client: codex
+    expect:
+      selected: ota-expert
+
+  - id: ota-expert-bindings
+    description: ota-expert must keep its core Skill, Prompt, and repository tools.
+    target: agent
+    operation: get
+    name: ota-expert
+    expect:
+      skills:
+        - ota-code-review
+      prompts:
+        - ota-code-review-prompt
+      tools:
+        - git
+        - repository-read

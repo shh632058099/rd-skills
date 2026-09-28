@@ -1,0 +1,15 @@
+schema_version: 1
+name: example-agent
+version: 0.1.0
+description: Describe the team agent's purpose.
+metadata:
+  audience: [developer]
+  visibility: [internal]
+  keywords: [example]
+  owner: team-name
+  compatibility:
+    codex: true
+    claude_code: true
+skills: []
+prompts: []
+tools: []

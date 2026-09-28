@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Deterministic Evaluation Suite",
+  "type": "object",
+  "required": ["schema_version", "id", "description", "cases"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "id": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "cases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "target", "operation", "expect"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "description": { "type": "string" },
+          "target": { "enum": ["skill", "prompt", "agent"] },
+          "operation": { "enum": ["search", "resolve", "get"] },
+          "query": { "type": "string" },
+          "name": { "type": "string" },
+          "client": { "type": "string" },
+          "expect": {
+            "type": "object",
+            "properties": {
+              "selected": { "type": "string" },
+              "repository": { "type": "string" },
+              "contains": { "type": "array", "items": { "type": "string" } },
+              "skills": { "type": "array", "items": { "type": "string" } },
+              "prompts": { "type": "array", "items": { "type": "string" } },
+              "tools": { "type": "array", "items": { "type": "string" } }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

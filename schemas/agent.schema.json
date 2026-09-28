@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Team Agent Manifest",
+  "type": "object",
+  "required": ["schema_version", "name", "description", "metadata"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "version": { "type": "string" },
+    "description": { "type": "string", "minLength": 1 },
+    "metadata": {
+      "type": "object",
+      "required": ["audience", "visibility", "keywords", "owner"],
+      "properties": {
+        "audience": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "visibility": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "keywords": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "owner": { "type": "string", "minLength": 1 },
+        "compatibility": {
+          "type": "object",
+          "additionalProperties": { "type": "boolean" }
+        }
+      }
+    },
+    "skills": { "type": "array", "items": { "type": "string" } },
+    "prompts": { "type": "array", "items": { "type": "string" } },
+    "tools": { "type": "array", "items": { "type": "string" } }
+  }
+}
