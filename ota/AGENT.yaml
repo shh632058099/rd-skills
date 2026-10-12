@@ -25,5 +25,5 @@ skills:
 prompts:
   - ota-code-review-prompt
 tools:
-  - git
-  - repository-read
+  # - git
+  # - repository-read
