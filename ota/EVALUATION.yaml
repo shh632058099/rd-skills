@@ -52,3 +52,19 @@ cases:
       tools:
         # - git
         # - repository-read
+
+  - id: knowledge-rollback-risk
+    description: OTA rollback-risk questions should retrieve the review checklist.
+    target: knowledge
+    operation: search
+    query: persistent OTA state rollback risk upgrade compatibility
+    expect:
+      selected: ota/code-review/references/review-checklist.md
+
+  - id: knowledge-review-example
+    description: OTA simplification requests should retrieve the concrete example guidance.
+    target: knowledge
+    operation: search
+    query: find unnecessary APIs overly long call chains explain deletion risk
+    expect:
+      selected: ota/code-review/examples/example.md
