@@ -13,6 +13,13 @@ metadata:
   keywords:
     - superpowers
     - using-git-worktrees
+    - git-worktree
+    - worktree
+    - isolated-workspace
+    - git工作树
+    - 工作树
+    - 隔离工作区
+    - 并行分支开发
   visibility:
     - internal
   maturity: stable

@@ -13,6 +13,13 @@ metadata:
   keywords:
     - superpowers
     - brainstorming
+    - requirements
+    - design
+    - ideation
+    - 头脑风暴
+    - 需求分析
+    - 方案设计
+    - 设计方案
   visibility:
     - internal
   maturity: stable

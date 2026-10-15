@@ -13,6 +13,13 @@ metadata:
   keywords:
     - superpowers
     - requesting-code-review
+    - code-review
+    - review
+    - pre-merge-review
+    - 代码评审
+    - 代码审查
+    - 请求评审
+    - 合并前检查
   visibility:
     - internal
   maturity: stable

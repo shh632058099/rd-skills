@@ -13,6 +13,13 @@ metadata:
   keywords:
     - superpowers
     - using-superpowers
+    - skill-discovery
+    - skill-invocation
+    - workflow-skills
+    - 使用技能
+    - 技能发现
+    - 调用技能
+    - 工作流技能
   visibility:
     - internal
   maturity: stable

@@ -13,6 +13,14 @@ metadata:
   keywords:
     - superpowers
     - test-driven-development
+    - tdd
+    - testing
+    - test-first
+    - unit-test
+    - 测试驱动
+    - 先写测试
+    - 单元测试
+    - 测试先行
   visibility:
     - internal
   maturity: stable

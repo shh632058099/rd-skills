@@ -13,6 +13,16 @@ metadata:
   keywords:
     - superpowers
     - systematic-debugging
+    - debugging
+    - troubleshooting
+    - root-cause
+    - bug
+    - failure
+    - 调试
+    - 排查
+    - 根因
+    - 故障
+    - 报错
   visibility:
     - internal
   maturity: stable

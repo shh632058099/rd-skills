@@ -13,6 +13,13 @@ metadata:
   keywords:
     - superpowers
     - writing-plans
+    - implementation-plan
+    - planning
+    - task-plan
+    - 实现计划
+    - 实施计划
+    - 开发计划
+    - 任务拆解
   visibility:
     - internal
   maturity: stable

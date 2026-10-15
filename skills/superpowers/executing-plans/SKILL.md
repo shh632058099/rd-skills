@@ -13,6 +13,13 @@ metadata:
   keywords:
     - superpowers
     - executing-plans
+    - implementation-plan
+    - plan-execution
+    - checkpoints
+    - 执行计划
+    - 实施计划
+    - 按计划执行
+    - 分阶段执行
   visibility:
     - internal
   maturity: stable

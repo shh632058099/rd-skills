@@ -13,6 +13,13 @@ metadata:
   keywords:
     - superpowers
     - verification-before-completion
+    - verification
+    - validation
+    - completion-check
+    - 完成前验证
+    - 验证结果
+    - 提交前验证
+    - 最终检查
   visibility:
     - internal
   maturity: stable

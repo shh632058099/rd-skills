@@ -13,6 +13,13 @@ metadata:
   keywords:
     - superpowers
     - subagent-driven-development
+    - subagent
+    - agent-development
+    - task-delegation
+    - 子代理
+    - 代理开发
+    - 任务委派
+    - 分任务实现
   visibility:
     - internal
   maturity: stable

@@ -13,6 +13,13 @@ metadata:
   keywords:
     - superpowers
     - writing-skills
+    - skill-authoring
+    - skill-development
+    - skill-testing
+    - 编写技能
+    - 技能开发
+    - 技能测试
+    - 修改技能
   visibility:
     - internal
   maturity: stable

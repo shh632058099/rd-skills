@@ -13,6 +13,13 @@ metadata:
   keywords:
     - superpowers
     - finishing-a-development-branch
+    - branch-finish
+    - merge
+    - integration
+    - 收尾分支
+    - 完成分支
+    - 合并分支
+    - 集成代码
   visibility:
     - internal
   maturity: stable

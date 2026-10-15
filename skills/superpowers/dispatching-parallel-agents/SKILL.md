@@ -13,6 +13,13 @@ metadata:
   keywords:
     - superpowers
     - dispatching-parallel-agents
+    - parallel-agents
+    - parallel-tasks
+    - concurrency
+    - 并行任务
+    - 并行执行
+    - 多代理
+    - 多任务并行
   visibility:
     - internal
   maturity: stable

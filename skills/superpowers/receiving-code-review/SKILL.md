@@ -13,6 +13,13 @@ metadata:
   keywords:
     - superpowers
     - receiving-code-review
+    - code-review-feedback
+    - review-comments
+    - feedback-validation
+    - 代码评审反馈
+    - 代码审查反馈
+    - 处理评审意见
+    - 验证评审意见
   visibility:
     - internal
   maturity: stable
